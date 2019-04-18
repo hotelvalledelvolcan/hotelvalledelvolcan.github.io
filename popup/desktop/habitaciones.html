@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style>
+            .contenedorPopUp {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .imagenFondo {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
+
+            .superposicion {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                background-image: url('../../img/fondo.jpg');
+                opacity: .8;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .5s ease;
+                vertical-align: middle;
+            }
+
+            .contenedorPopUp:hover .superposicion {
+                bottom: 0;
+                height: 100%;
+            }
+
+            .textoSobreImagen {
+                white-space: normal;
+                color: black;
+                font-size: 23px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 5%;
+                transform: translate(0%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+
+        </style>
+
+</head>
+
+<div class="contenedorPopUp">
+    <img src=/img/team/5.jpg alt="" class="imagenFondo">
+    <div class="superposicion">
+        <div class="textoSobreImagen">
+            <ul>
+                <li>40 habitaciones con baño privado</li>
+                <li>Televisión satelital en c/u</li>
+                <li>Calefacción central</li>
+                <li>WI-FI</li>
+                <li>Restaurant</li>
+                <li>Sala de usos múltiples</li>
+                <li>Confitería</li>
+                <li>Servicio de lavandería</li>
+                <li>Servicio de caja fuerte</li>
+                <li>Estufa hogar para disfrutar de un ambiente cálido y tranquilo.</li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
