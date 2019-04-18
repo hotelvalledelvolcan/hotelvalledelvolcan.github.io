@@ -63,17 +63,16 @@ jQuery(document).ready(function () {
         var Email = $("#Email").val();
         var Asunto = $("#Asunto").val();
         var Telefono = $("#Telefono").val();
-        var Mensaje = $("#Mensaje").val();
+        var Mensaje = $("#Mensaje").val() + '\n Telefono: ' + Telefono;
 
-        formData.append("Nombre", Nombre);
-        formData.append("Email", Email);
-        formData.append("Asunto", Asunto);
-        formData.append("Telefono", Telefono);
-        formData.append("Mensaje", Mensaje);
+        formData.append("name", Nombre);
+        formData.append("email", Email);
+        formData.append("_subject", Asunto);
+        formData.append("message", Mensaje);
 
         $.ajax({
             type: "POST",
-            url: '/Home/EnviarMail',
+            url: 'https://formsapi.jabwn.com/key/ahM3bdVG3HFMPOyiGdeo',
             data: formData,
             contentType: false,
             processData: false,
