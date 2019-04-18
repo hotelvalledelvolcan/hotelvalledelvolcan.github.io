@@ -72,7 +72,7 @@ jQuery(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: 'https://formsapi.jabwn.com/key/ahM3bdVG3HFMPOyiGdeo',
+            url: 'https://formsapi.jabwn.com/key/92YlWWhtgnNcuoovxgKk',
             data: formData,
             contentType: false,
             processData: false,
